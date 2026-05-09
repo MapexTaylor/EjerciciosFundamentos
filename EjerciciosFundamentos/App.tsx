@@ -6,7 +6,7 @@ import { useState } from 'react';
 export default function App() {
 //a
 const greeting = (nombreSaludo: any) => {
-  return `Hola, ${nombreSaludo}! Espero estes bien! Bienvenido a la aplicación.`;
+  return `Hola, ${nombreSaludo}! Espero estés bien! Bienvenido a la aplicación.`;
 }
 const [name, setName] = useState("")
 
@@ -28,7 +28,7 @@ const tareas = [
       <StatusBar style="auto" />
       <Text style = {styles.mainTitle}>Guía de Ejercicios</Text>
       <View style = {styles.ejercicio}>
-        <Text style = {styles.title}>Primer Ejericio</Text>
+        <Text style = {styles.title}>Primer Ejercicio</Text>
         <CustomInput 
           placeholder={'Ingresa tu nombre!'} 
           value={name} 
@@ -54,7 +54,7 @@ const tareas = [
 
       <View style = {styles.ejercicio}>
         <Text style = {styles.title}>Tercer Ejercicio</Text>
-        <Text style = {styles.text}>Estan son las tareas:</Text>
+        <Text style = {styles.text}>Estas son las tareas:</Text>
         {tareas.map((tarea) => (
           <Text style = {styles.text} key={tarea.id}>
             {tarea.id}. {tarea.nombre}
